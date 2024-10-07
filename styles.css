@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    background: rgb(72, 103, 112);
+}
+header h1{
+    color: rgb(255, 0, 34);
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.hamburger-btn {
+    display: flex; /* Hide on large screens */
+    cursor: pointer;
+}
+
+.hamburger-lines {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.hamburger-lines::after,
+.hamburger-lines::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+.hamburger-lines::after {
+    top: -6px;
+}
+
+.hamburger-lines::before {
+    bottom: -6px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.topic-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topic-links li {
+    text-decoration: none;
+}
+
+.topic-links li {
+    margin: 0 10px;}
+    #articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      article {
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      img{
+           border-radius: 25px; 
+          text-indent: -100vw;
+           overflow: hidden;
+      }
+      figure {
+        text-align: center;
+      }
+      
+      figcaption {
+        font-size: 0.8em;
+        margin-top: 5px;
+      }
+     /*  figure img{
+        border-radius: 0%;
+      } */
+      
+      footer {
+        text-align: center;
+        padding: 10px;
+      }
